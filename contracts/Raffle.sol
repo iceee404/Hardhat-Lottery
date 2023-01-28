@@ -18,6 +18,7 @@ error Raffle__RaffleNotOpen();
 error Raffle__TransferFailed();
 
 contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
+    //在测试代码中枚举会被自动转换成big int类型，open代表的就是0，calculating代表1.
     enum RaffleState {
         OPEN,
         CALCULATING
