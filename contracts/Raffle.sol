@@ -116,7 +116,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
      * 1.我们的时间间隔已经过去了
      * 2.彩票合约至少有一位参与者,并且有一些ETH在合约账户上
      * 3.我们的订阅由 LINK 资助
-     * 4.彩票应处于“打开”状态(需要一些状态变量)
+     * 4.彩票应处于“打开”状态
      */
 
     function checkUpkeep(

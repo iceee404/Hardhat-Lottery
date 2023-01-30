@@ -26,7 +26,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         //创建好订阅id，需要往里面fund link进去，（然后添加消费者合约address）
         await vrfCoordinatorV2Mock.fundSubscription(subscriptionId, FUND_AMOUNT);
     } else {
-        vrfCoordinatorV2Address = networkConfig[chainId][vrfCoordinatorV2];
+        vrfCoordinatorV2Address = networkConfig[chainId]["vrfCoordinatorV2"];
         subscriptionId = networkConfig[chainId]["subscriptionId"];
     }
 

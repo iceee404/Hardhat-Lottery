@@ -56,4 +56,12 @@ module.exports = {
         noColors: true,
         // coinmarketcap: process.env.COINMARKETCAP_API_KEY,
     },
+    mocha: {
+        timeout: 500000, // 500 seconds max for running tests
+    },
+    etherscan: {
+        apiKey: {
+            goerli: ETHERSCAN_API_KEY,
+        },
+    },
 };
